@@ -1,0 +1,5 @@
+pauli@pauli-MS-7C02:~$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                     PORTS     NAMES
+9d476f607cc0   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 7 seconds ago             elastic_sinoussi
+a6088d4472c2   nginx     "/docker-entrypoint.…"   2 minutes ago   Exited (0) 1 second ago              elastic_wing
+d158563a6d87   nginx     "/docker-entrypoint.…"   2 minutes ago   Up 2 minutes               80/tcp    beautiful_yalow
