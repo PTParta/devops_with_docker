@@ -1,0 +1,6 @@
+pauli@pauli-MS-7C02:~$ sudo docker ps -as
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+pauli@pauli-MS-7C02:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+pauli@pauli-MS-7C02:~$ 
+
