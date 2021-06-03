@@ -1,0 +1,10 @@
+pauli@pauli-MS-7C02:~$  sudo docker run -it ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+
+in another terminal
+pauli@pauli-MS-7C02:~$ sudo docker container ls -a
+CONTAINER ID   IMAGE     COMMAND                   CREATED          STATUS                       PORTS     NAMES
+47de069766dd   ubuntu    "sh -c 'echo \"Input …"   15 seconds ago   Up 14 seconds                          upbeat_mcnulty
+pauli@pauli-MS-7C02:~$ sudo docker exec -it upbeat_mcnulty bash
+root@47de069766dd:/# apt update && apt upgrade
+apt install curl
+
