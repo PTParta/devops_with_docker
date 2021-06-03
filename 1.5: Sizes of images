@@ -1,0 +1,22 @@
+sudo docker pull devopsdockeruh/simple-web-service:ubuntu
+pauli@pauli-MS-7C02:~$ sudo docker pull devopsdockeruh/simple-web-service:alpine
+pauli@pauli-MS-7C02:~$ sudo docker image ls -a
+REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 months ago   15.7MB
+
+sudo docker run devopsdockeruh/simple-web-service:alpine
+
+in another termninal
+sudo docker container ls -a
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS                     PORTS     NAMES
+cc17da775420   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   7 seconds ago   Up 6 seconds                         romantic_babbage
+pauli@pauli-MS-7C02:~$ sudo docker exec -it romantic_babbage sh
+/usr/src/app # tail -f ./text.log
+2021-06-03 07:11:50 +0000 UTC
+2021-06-03 07:11:52 +0000 UTC
+2021-06-03 07:11:54 +0000 UTC
+2021-06-03 07:11:56 +0000 UTC
+2021-06-03 07:11:58 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+
